@@ -1,3 +1,5 @@
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
 ## Ryein's Traffic Sign Recognition
 
 **Build a Traffic Sign Recognition Project**
@@ -80,8 +82,11 @@ Here is an exploratory visualization of the data set.  It pulls in a random set 
 The code for this step is contained in the fourth code cell of the IPython notebook.
 
 After this point I also detail the dataset structure by plotting the occurrence of each image class to get an idea of how the data is distributed.  This can help understand where potential pitfalls could occur if the dataset isn't uniform in terms of a baseline occurrence.
+
 ![alt text][image1a]
+
 ![alt text][image1b]
+
 ![alt text][image1c]
 
 ### Design and Test a Model Architecture
@@ -106,15 +111,19 @@ Here is a look at the normalized images. Which should look identical.
 At first I wasn't going to do this part because I didn't have enough time, but I took an extra day and decided to turn this in on the 28th rather then the 27th.  I did a few random alterations to the images and saved multiple copies of them depending on the total images in the dataset class type.
 
 Here is an example of 1 image I changed at random.  More can be seen further in the document, but the original is on the right and the randomized opencv affine change is on the left.  Small rotations are also visible further along as stated.
+
 ![alt text][image2aug]
 
 I increased the train dataset size to 89860 and also merged and then remade another validation dataset.  Now no image class in the train set has less then 1000 images.  Test
+
 ![alt text][image2train]
 
 Test set was left alone.
+
 ![alt text][image2test]
 
 Validation set gained 20% of the original total mentioned above.  I did this using scikit learns train test split method.
+
 ![alt text][image2valid]
 
 #### 3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
@@ -155,6 +164,7 @@ To train the model, I used an LeNet for the most part that was given, but I did 
 The code for calculating the accuracy of the model is located in the 16th and 17th cell of the Ipython notebook.
 
 ![alt text][image3]
+
 ![alt text][image3a]
 
 My final model results were:
@@ -179,8 +189,7 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6]
-![alt text][image7] ![alt text][image8] ![alt text][image9]
+![alt text][image4] ![alt text][image5] ![alt text][image6] ![alt text][image7] ![alt text][image8] ![alt text][image9]
 
 I used semi-easy images to classify and even modified them slightly.  I made them all uniform in size and only had one partially cut off.
 
