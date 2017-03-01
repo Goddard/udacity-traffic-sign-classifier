@@ -103,7 +103,7 @@ Here is an example of a traffic sign images that were randomly selected.
 
 ![alt text][image2]
 
-Here is a look at the normalized images. Which should look identical.
+Here is a look at the normalized images. Which should look identical, but for some small random alterations such as opencv affine and rotation.  
 ![alt text][image2a]
 
 #### 2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
